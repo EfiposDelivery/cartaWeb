@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carta - El Var</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-title">
+      <h1>El Var</h1>
+      <p>Carta</p>
+    </div>
+    <nav class="site-nav" aria-label="Navegación de secciones de la carta">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        ☰
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#desayunos">Desayunos y meriendas</a></li>
+        <li><a href="#carta-dulce">Carta dulce</a></li>
+        <li><a href="#entrantes">Entrantes</a></li>
+        <li><a href="#ensaladas">Ensaladas</a></li>
+        <li><a href="#montaditos">Montaditos &amp; bocatas</a></li>
+        <li><a href="#platos-saludables">Platos saludables</a></li>
+        <li><a href="#carnes">Carnes</a></li>
+        <li><a href="#pescados">Pescados</a></li>
+        <li><a href="#infantil">Plato infantil</a></li>
+        <li><a href="#postres">Postres</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <section id="desayunos" class="menu-section">
+      <h2>Carta de desayunos y meriendas</h2>
+
+      <h3 class="menu-group-title">Tostadas clásicas</h3>
+      <p class="note">Tipos de pan: viena, mollete, integral, multicereal.</p>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Aceite y tomate</p>
+          </div>
+          <p class="menu-item-price">1,80€ / 2,30€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">York / pavo</p>
+          </div>
+          <p class="menu-item-price">1,70€ / 2,10€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Tortilla francesa</p>
+          </div>
+          <p class="menu-item-price">2,30€ / 2,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Atún</p>
+          </div>
+          <p class="menu-item-price">2,30€ / 2,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Jamón serrano</p>
+          </div>
+          <p class="menu-item-price">2,70€ / 3,30€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Tostadas gourmet</h3>
+      <p class="note">Tipos de pan: pan moreno.</p>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Rulo de queso de cabra con miel y nueces</p>
+          </div>
+          <p class="menu-item-price">4,70€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Guacamole y taquitos de jamón</p>
+          </div>
+          <p class="menu-item-price">4,70€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Crema de cacahuetes con plátano y canela</p>
+          </div>
+          <p class="menu-item-price">4,70€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Otros salados</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Sandwich (mantequilla, york y queso)</p>
+          </div>
+          <p class="menu-item-price">3,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Croissant</p>
+          </div>
+          <p class="menu-item-price">1,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Croissant (mantequilla, mermelada)</p>
+          </div>
+          <p class="menu-item-price">2,30€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Focaccia, pesto, mortadela, burrata y pistachos</p>
+          </div>
+          <p class="menu-item-price">5,60€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Bocatas The Special Var</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">1. La Roja</p>
+            <p class="menu-item-desc">Aceite, tomate, jamón serrano y queso viejo</p>
+          </div>
+          <p class="menu-item-price">4,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">2. El Beckenbauer de la Bahía</p>
+          </div>
+          <p class="menu-item-price">—</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="carta-dulce" class="menu-section">
+      <h2>Carta dulce</h2>
+
+      <h3 class="menu-group-title">Gofres y crepes (a tu gusto)</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Chocolate, nata, sirope</p>
+          </div>
+          <p class="menu-item-price">4,80€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Chocolate, nata, sirope y topping</p>
+          </div>
+          <p class="menu-item-price">5,20€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Chocolate, helado de vainilla, nata, sirope y topping</p>
+          </div>
+          <p class="menu-item-price">6,50€</p>
+        </li>
+      </ul>
+      <p class="note">
+        Salsas: chocolate, chocolate blanco, Kinder. Toppings: Lacasitos, barrita avellana, galletas troceadas.
+      </p>
+
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Brownie, helado vainilla, nata, sirope</p>
+          </div>
+          <p class="menu-item-price">4,50€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Muffins y bollería</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Muffins</p>
+          </div>
+          <p class="menu-item-price">2,80€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Muffins sin gluten</p>
+          </div>
+          <p class="menu-item-price">3,30€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Croissant con chocolate y nata</p>
+          </div>
+          <p class="menu-item-price">2,80€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Croissant con Lotus, nata y galletas troceadas</p>
+          </div>
+          <p class="menu-item-price">3,00€</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="entrantes" class="menu-section menu-section--columns">
+      <div>
+        <h2>Entrantes</h2>
+
+        <h3 class="menu-group-title">Ibéricos y quesos</h3>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Jamón 100% ibérico de bellota</p>
+            </div>
+            <p class="menu-item-price">23,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Tabla 3 quesos</p>
+            </div>
+            <p class="menu-item-price">16,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Tabla 5 quesos</p>
+            </div>
+            <p class="menu-item-price">22,00€</p>
+          </li>
+        </ul>
+
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Anchoas 4u</p>
+            </div>
+            <p class="menu-item-price">10,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Paté de perdiz + tostas + cebolla caramelizada</p>
+            </div>
+            <p class="menu-item-price">15,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Chicharrones</p>
+            </div>
+            <p class="menu-item-price">16,00€</p>
+          </li>
+        </ul>
+
+        <h3 class="menu-group-title">Entrantes fríos</h3>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Aguacate relleno</p>
+            </div>
+            <p class="menu-item-price">4,25€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensaladilla rusa con gambas</p>
+              <p class="menu-item-desc">Tapa 3,90€ · 8,00€ media · 13,00€ entera</p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensaladilla rusa con pulpo</p>
+            </div>
+            <p class="menu-item-price">10,90€ / 16,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">
+                Ensalada mix lechuga, mayonesa, manzana, cebolla morada, pasas y nueces y chicharrones
+              </p>
+            </div>
+            <p class="menu-item-price">13,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Salmorejo con huevo duro y taquitos de jamón (según temporada)</p>
+            </div>
+            <p class="menu-item-price">6,00€</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="menu-group-title">Entrantes calientes</h3>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Combo El Var (para compartir)</p>
+              <p class="menu-item-desc">
+                Alitas, finger de pollo, picket relish, aros de cebolla y mozzarella cerveza
+              </p>
+            </div>
+            <p class="menu-item-price">15,90€</p>
+          </li>
+        </ul>
+
+        <h3 class="menu-group-title">Croquetas</h3>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Jamón ibérico</p>
+            </div>
+            <p class="menu-item-price">3,50€ / 8,90€ / 16,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Gamba roja (quisquillas)</p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Cecina</p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">De rabo de toro</p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Buey</p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Chipirones en su tinta</p>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Crepe de puerros y gambas (3 uds.)</p>
+            </div>
+            <p class="menu-item-price">8,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Alcachofas con taquitos de jamón (3 uds.)</p>
+            </div>
+            <p class="menu-item-price">16,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Capirotos de langostinos</p>
+            </div>
+            <p class="menu-item-price">8,00€ / 13,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Tempura de verduras</p>
+            </div>
+            <p class="menu-item-price">7,00€ / 13,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Buñuelos de choco y langostino</p>
+              <p class="menu-item-desc">Media 7,00€ · Entera 10u 13,00€</p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Sartén huevos rotos con secreto y jamón ibérico</p>
+            </div>
+            <p class="menu-item-price">22,00€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Tortillitas de camarones fritas clásicas</p>
+            </div>
+            <p class="menu-item-price">3,60€ / unidad</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Tortillitas de camarones El Var</p>
+            </div>
+            <p class="menu-item-price">4,90€ / unidad</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Stick berenjenas con miel de caña</p>
+            </div>
+            <p class="menu-item-price">8,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Borek de queso hojaldrado</p>
+            </div>
+            <p class="menu-item-price">4,90€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">
+                Nachos para compartir con cochinita pibil y pico de gallo, guacamole y crema agria
+              </p>
+            </div>
+            <p class="menu-item-price">12,50€</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ensaladas" class="menu-section menu-section--columns">
+      <div>
+        <h2>Ensaladas</h2>
+
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada de berenjenas</p>
+            </div>
+            <p class="menu-item-price">14,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada rulo de cabra</p>
+            </div>
+            <p class="menu-item-price">13,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">
+                Variado de lechugas, mezclum, queso de rulo de cabra, piñones, pasas, nueces, cherry y piña, vinagreta
+              </p>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada César</p>
+              <p class="menu-item-desc">Lechuga, bacon, pollo, queso rallado y salsa César</p>
+            </div>
+            <p class="menu-item-price">16,50€</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="menu-group-title">Ensaladas (podemos ir cambiándolas por meses)</h3>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada de tomate con sardinas saladas</p>
+              <p class="menu-item-desc">
+                Tomate, pepino, cebolla morada, mango, aguacate, sardinas
+              </p>
+            </div>
+            <p class="menu-item-price">16,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada de boniato al horno</p>
+              <p class="menu-item-desc">Boniato con guacamole, huevo y jamón</p>
+            </div>
+            <p class="menu-item-price">16,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada de pimientos</p>
+              <p class="menu-item-desc">Pimientos, cebolla, aceitunas negras y burrata</p>
+            </div>
+            <p class="menu-item-price">14,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada de puerros confitados</p>
+              <p class="menu-item-desc">Con queso gorgonzola, anchoas y nueces</p>
+            </div>
+            <p class="menu-item-price">16,50€</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-main">
+              <p class="menu-item-name">Ensalada de puerros con burrata</p>
+              <p class="menu-item-desc">Crema de burrata, pesto y nueces</p>
+            </div>
+            <p class="menu-item-price">16,50€</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="montaditos" class="menu-section">
+      <h2>Montaditos y bocatas</h2>
+      <h3 class="menu-group-title">Montaditos</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Serranito</p>
+          </div>
+          <p class="menu-item-price">3,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Lomo / pollo con pimiento y jamón</p>
+          </div>
+          <p class="menu-item-price">3,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Piripi</p>
+            <p class="menu-item-desc">Pollo/lomo con bacon, queso y alioli</p>
+          </div>
+          <p class="menu-item-price">3,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Calamares, mezclum y alioli de remolacha</p>
+          </div>
+          <p class="menu-item-price">3,90€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Bocatas especiales</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">3. La Seve</p>
+            <p class="menu-item-desc">Aguacate, pavo y huevo plancha</p>
+          </div>
+          <p class="menu-item-price">4,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">4. La Miguelón Indurain</p>
+            <p class="menu-item-desc">Queso crema, aguacate, salmón, nueces y eneldo</p>
+          </div>
+          <p class="menu-item-price">5,10€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">5. La Champions</p>
+            <p class="menu-item-desc">Jamón, guacamole, queso fresco</p>
+          </div>
+          <p class="menu-item-price">4,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">6. Vamos Rafa</p>
+            <p class="menu-item-desc">Tortilla francesa, jamón y tomate</p>
+          </div>
+          <p class="menu-item-price">4,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">7. La Iniesta de mi vida</p>
+            <p class="menu-item-desc">Queso crema, aguacate, melva, tomate y pimiento morrón</p>
+          </div>
+          <p class="menu-item-price">5,60€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">8. La We'll Never Walk Alone</p>
+            <p class="menu-item-desc">Pollo, huevo, queso y bacon</p>
+          </div>
+          <p class="menu-item-price">5,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">9. La Mamba Negra KB8</p>
+            <p class="menu-item-desc">Lomo adobado, queso, huevo y tomate</p>
+          </div>
+          <p class="menu-item-price">4,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">10. El Triplete</p>
+            <p class="menu-item-desc">Serranito de pollo o lomo, jamón y pimiento</p>
+          </div>
+          <p class="menu-item-price">5,60€</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="platos-saludables" class="menu-section">
+      <h2>Platos saludables</h2>
+      <h3 class="menu-group-title">Arroz a elegir blanco o integral</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Arroz, atún, aguacate y queso fresco</p>
+          </div>
+          <p class="menu-item-price">8,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Arroz, tortilla francesa, atún y pavo</p>
+          </div>
+          <p class="menu-item-price">8,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Arroz, pollo, aguacate y tomate</p>
+          </div>
+          <p class="menu-item-price">8,00€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Bowls</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">
+              Bowl de yogur griego, granola, frutos secos, chía, crema de cacahuetes y fruta
+            </p>
+          </div>
+          <p class="menu-item-price">8,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Açaí con fruta, granola y frutos secos</p>
+          </div>
+          <p class="menu-item-price">9,50€</p>
+        </li>
+      </ul>
+      <p class="note">Ingrediente extra +1€</p>
+    </section>
+
+    <section id="carnes" class="menu-section">
+      <h2>Carnes</h2>
+
+      <h3 class="menu-group-title">Pollo / cerdo / ternera</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Pollo churrasco</p>
+          </div>
+          <p class="menu-item-price">13,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Cerdo ibérico</p>
+          </div>
+          <p class="menu-item-price">23,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Presa ibérica</p>
+          </div>
+          <p class="menu-item-price">19,00€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Ternera / vacuno</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Lomo alto 250gr</p>
+          </div>
+          <p class="menu-item-price">23,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Lomo bajo 250gr</p>
+          </div>
+          <p class="menu-item-price">23,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Solomillo 250gr</p>
+          </div>
+          <p class="menu-item-price">32,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Entraña 250gr</p>
+          </div>
+          <p class="menu-item-price">18,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Presa Black Angus</p>
+          </div>
+          <p class="menu-item-price">34,00€</p>
+        </li>
+      </ul>
+
+      <h3 class="menu-group-title">Hamburguesas y panes</h3>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">
+              Pan brioche gambas, alioli y ajiverde (ajo y perejil)
+            </p>
+          </div>
+          <p class="menu-item-price">3,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">
+              Hamburguesita, mezclum, cebolla caramelizada, queso
+            </p>
+          </div>
+          <p class="menu-item-price">3,90€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Hamburguesa El Var</p>
+          </div>
+          <p class="menu-item-price">13,50€</p>
+        </li>
+      </ul>
+
+      <p class="note">
+        Salsa a elegir 1,50€ · Pan y picos 1,50€ · Aceitunas 1€
+      </p>
+    </section>
+
+    <section id="pescados" class="menu-section">
+      <h2>Pescados</h2>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Calamar plancha</p>
+          </div>
+          <p class="menu-item-price">SP — 50€/kg</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Calamar frito</p>
+          </div>
+          <p class="menu-item-price">SP — 50€/kg</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Pata pulpo a la brasa</p>
+          </div>
+          <p class="menu-item-price">25,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Pata de pulpo frito</p>
+          </div>
+          <p class="menu-item-price">25,00€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Rosada frita</p>
+          </div>
+          <p class="menu-item-price">9,50€ / 16,50€</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Cazón en adobo (tintorera)</p>
+          </div>
+          <p class="menu-item-price">9,50€ / 16,00€</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="infantil" class="menu-section">
+      <h2>Plato infantil</h2>
+      <p class="note">Plato infantil 12,50€</p>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Cachopín de lomo y queso + patatas + huevo</p>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Lagrimitas de pollo + patatas + huevo</p>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Merluza empanada + patatas + huevo</p>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-main">
+            <p class="menu-item-name">Pechuga de pollo plancha + arroz + huevo</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="postres" class="menu-section">
+      <h2>Postres</h2>
+      <p class="note">
+        Ver sección <strong>Carta dulce</strong> para gofres, crepes, brownies, muffins y bollería.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="alergenos">
+      En este establecimiento todos los productos de la pesca que vayan a consumirse crudos o poco hechos han sido previamente congelados a una temperatura igual o inferior a -20&nbsp;ºC durante al menos 24 horas o a -35&nbsp;ºC al menos 15 horas, para destruir la posible parasitación del mismo por el anisakis.
+    </p>
+    <p>Para cualquier duda sobre alérgenos, consulta a nuestro personal.</p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Volver arriba">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

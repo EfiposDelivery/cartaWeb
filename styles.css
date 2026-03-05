@@ -1,0 +1,269 @@
+/* Estilos base */
+:root {
+  color-scheme: light;
+  --color-bg: #faf7f2;
+  --color-surface: #ffffff;
+  --color-primary: #5b3a2b;
+  --color-primary-soft: #f2e3d6;
+  --color-text: #2b261f;
+  --color-muted: #7a7367;
+  --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: linear-gradient(to bottom, #fffdf9, #f7eee5);
+  box-shadow: var(--shadow-soft);
+}
+
+.site-title {
+  padding: 0.75rem 1.25rem 0.25rem;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.site-title p {
+  margin: 0.1rem 0 0.4rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.site-nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.35rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-toggle {
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  padding: 0.1rem 0.35rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.nav-links li {
+  white-space: nowrap;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--color-muted);
+  background-color: transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.nav-links a.is-active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.menu {
+  padding: 1.25rem 1.25rem 4rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  margin-bottom: 2.5rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  background-color: var(--color-surface);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.menu-section h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.menu-group-title {
+  margin: 1.1rem 0 0.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.menu-items {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-main {
+  max-width: 75%;
+}
+
+.menu-item-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.menu-item-desc {
+  margin: 0.15rem 0 0;
+  font-size: 0.83rem;
+  color: var(--color-muted);
+}
+
+.menu-item-price {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.note {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.site-footer {
+  padding: 1.5rem 1.25rem 2.5rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  background-color: #f0e4d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.site-footer p {
+  margin: 0.3rem 0;
+}
+
+.alergenos {
+  font-size: 0.75rem;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.back-to-top.is-visible {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .site-title {
+    padding-inline: 2rem;
+  }
+
+  .site-nav {
+    padding-inline: 2rem;
+  }
+
+  .menu {
+    padding-inline: 2rem;
+  }
+
+  .menu-section {
+    padding-inline: 1.75rem;
+  }
+
+  .menu-section--columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2rem;
+  }
+}
+
