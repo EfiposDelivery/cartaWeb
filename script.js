@@ -1,14 +1,40 @@
 const navLinks = document.querySelectorAll(".nav-links a");
+const drawer = document.getElementById("nav-drawer");
+const drawerLinks = drawer ? drawer.querySelectorAll("a") : null;
 const sections = document.querySelectorAll("main .menu-section");
 const navToggle = document.querySelector(".nav-toggle");
-const navList = document.getElementById("nav-links");
 const backToTopBtn = document.querySelector(".back-to-top");
 
-if (navToggle && navList) {
+function setActiveLinks(id) {
+  const selector = `.nav-links a[href="#${id}"], .nav-drawer-links a[href="#${id}"]`;
+  const allNavLinks = document.querySelectorAll(
+    ".nav-links a, .nav-drawer-links a"
+  );
+  const current = document.querySelectorAll(selector);
+
+  allNavLinks.forEach((a) => a.classList.remove("is-active"));
+  current.forEach((a) => a.classList.add("is-active"));
+}
+
+if (navToggle && drawer) {
   navToggle.addEventListener("click", () => {
     const expanded = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!expanded));
-    navList.classList.toggle("is-open");
+    const nextExpanded = !expanded;
+    navToggle.setAttribute("aria-expanded", String(nextExpanded));
+    drawer.classList.toggle("is-open", nextExpanded);
+    drawer.setAttribute("aria-hidden", String(!nextExpanded));
+  });
+}
+
+if (drawerLinks && drawer) {
+  drawerLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      drawer.classList.remove("is-open");
+      drawer.setAttribute("aria-hidden", "true");
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 }
 
@@ -24,12 +50,8 @@ const observer = new IntersectionObserver(
       const id = entry.target.getAttribute("id");
       if (!id) return;
 
-      const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-      if (!link) return;
-
       if (entry.isIntersecting) {
-        navLinks.forEach((a) => a.classList.remove("is-active"));
-        link.classList.add("is-active");
+        setActiveLinks(id);
       }
     });
   },
